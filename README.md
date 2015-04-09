@@ -1,0 +1,1 @@
+This is a modification of the excellent [jeelib Libraries](https://github.com/jcw/jeelib). It is exclusively an extraction of the Sleepy functionality for low power operation. 
