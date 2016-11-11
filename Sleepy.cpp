@@ -1,15 +1,9 @@
-#include "jeelib-sleepy.h"
 #include <avr/sleep.h>
 #include <util/atomic.h>
-
-// flag bits sent to the receiver
-#define MODE_CHANGE 0x80    // a pin mode was changed
-#define DIG_CHANGE  0x40    // a digital output was changed
-#define PWM_CHANGE  0x30    // an analog (pwm) value was changed on port 2..3
-#define ANA_MASK    0x0F    // an analog read was requested on port 1..4
+#include "Sleepy.h"
 
 
-// ISR(WDT_vect) { Sleepy::watchdogEvent(); }
+
 
 static volatile byte watchdogCounter;
 
